@@ -2,62 +2,63 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- agregar las etiquetas meta -->
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- agregar las etiquetas meta -->
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/34fc8d25de.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-light bg-light">
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Calculadora <i class="fas fa-calculator fa-1x"></i></span>
+      </div>
+    </nav>
+  </header>
+  <main class="container my-4">
+    <div class="card w-75 content-justify-center">
+      <div class="card-body">
+        <form action="" id="formulario" class="px-3">
+          <label for="">Ingrese los numeros para operar</label>
+          <input type="text" id="numero1" name="numero1" class="form-control my-1">
+          <input type="text" id="numero2" name="numero2" class="form-control my-1">
+          <div class="jumbotron jumbotron-fluid bg-light">
             <div class="container">
-                <span class="navbar-brand mb-0 h1">Calculadora</span>
-            </div>
-        </nav>
-    </header>
-    <main class="container">
-        <div class="card w-50 content-justify-center">
-            <div class="card-body">
-              <form action="" class="px-3">
-                  <label for="">Ingrese los numeros para operar</label>
-                  <input type="text" class="form-control my-1">
-                  <input type="text" class="form-control my-1">
-                  <div class="jumbotron jumbotron-fluid bg-light">
-                    <div class="container">
-                      <p class="h4">Resultado</p>
-                      <p class="lead">prueba</p>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                      <div class="col-3">
-                        <button type="submit" class="btn btn-primary btn-block my-2">Sumar</button>
-                      </div>
-                      <div class="col-3">
-                        <button type="submit" class="btn btn-danger btn-block my-2">Restar</button>
-                      </div>
-                      <div class="col-3">
-                        <button type="submit" class="btn btn-success btn-block my-2">Multiplicar</button>
-                      </div>
-                      <div class="col-3">
-                        <button type="submit" class="btn btn-info btn-block my-2">Dividir</button>
-                      </div>
-                  </div>
-              </form>
+              <p class="h4">Resultado</p>
+              <p class="lead" id="resultado"></p>
             </div>
           </div>
-    </main>
+        </form>
+        <div class="row">
+          <div class="col-sm-1 col-md-6 col-lg-3">
+            <button type="submit" class="btn btn-primary btn-block my-2" onclick="sumar()"><i class="fas fa-plus fa-2x text-white"></i></button>
+          </div>
+          <div class="col-sm-1 col-md-6 col-lg-3">
+            <button type="submit" class="btn btn-danger btn-block my-2" onclick="restar()"><i class="fas fa-minus fa-2x text-white"></i></button>
+          </div>
+          <div class="col-sm-1 col-md-6 col-lg-3">
+            <button type="submit" class="btn btn-success btn-block my-2" onclick="multiplicar()"><i class="fas fa-times fa-2x text-white"></i></button>
+          </div>
+          <div class="col-sm-1 col-md-6 col-lg-3">
+            <button type="submit" class="btn btn-info btn-block my-2" onclick="dividir()"><i class="fas fa-divide fa-2x text-white"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <footer>
+  <footer>
 
-    </footer>
+  </footer>
 
-    <!-- script -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/calculadora.js"></script>
+  <!-- script -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/calculadora.js"></script>
 </body>
 
 </html>
