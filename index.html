@@ -18,31 +18,41 @@
       </div>
     </nav>
   </header>
-  <main class="container my-4">
-    <div class="card w-75 content-justify-center">
+  <main class="container my-4 content-justify-center">
+    <div class="card">
       <div class="card-body">
         <form action="" id="formulario" class="px-3">
           <label for="">Ingrese los numeros para operar</label>
-          <input type="text" id="numero1" name="numero1" class="form-control my-1">
-          <input type="text" id="numero2" name="numero2" class="form-control my-1">
-          <div class="jumbotron jumbotron-fluid bg-light">
-            <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <p>Primer número</p>
+              <input type="text" id="numero1" name="numero1" class="form-control my-1">
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <p>Segundo número</p>
+              <input type="text" id="numero2" name="numero2" class="form-control my-1">
+            </div>
+          </div>
+          <div class="jumbotron jumbotron-fluid bg-light m-1 py-2">
+            <div class="container py-3 text-center">
               <p class="h4">Resultado</p>
               <p class="lead" id="resultado"></p>
             </div>
           </div>
         </form>
         <div class="row">
-          <div class="col-sm-1 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <button type="submit" class="btn btn-primary btn-block my-2" onclick="sumar()"><i class="fas fa-plus fa-2x text-white"></i></button>
+            <!-- <button type="submit" class="btn btn-danger btn-block my-2" onclick="restar()"><i class="fas fa-minus fa-2x text-white"></i></button> -->
           </div>
-          <div class="col-sm-1 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <button type="submit" class="btn btn-danger btn-block my-2" onclick="restar()"><i class="fas fa-minus fa-2x text-white"></i></button>
           </div>
-          <div class="col-sm-1 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <button type="submit" class="btn btn-success btn-block my-2" onclick="multiplicar()"><i class="fas fa-times fa-2x text-white"></i></button>
+            <!-- <button type="submit" class="btn btn-info btn-block my-2" onclick="dividir()"><i class="fas fa-divide fa-2x text-white"></i></button> -->
           </div>
-          <div class="col-sm-1 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <button type="submit" class="btn btn-info btn-block my-2" onclick="dividir()"><i class="fas fa-divide fa-2x text-white"></i></button>
           </div>
         </div>
@@ -50,9 +60,12 @@
     </div>
   </main>
 
-  <footer>
-    <div class="container bg-dark">
-      <p class="h5">Aguirre, Rosa Pamela</p>
+  <footer class="bg-dark">
+    <div class="container text-white">
+      <div class="text-center py-3">
+        <p class="h5">Aguirre, Rosa Pamela - Comision 3A</p>
+        <p class="lead">&copy;All rights reserved</p>
+      </div>
     </div>
   </footer>
 
