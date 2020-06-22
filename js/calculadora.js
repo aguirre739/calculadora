@@ -52,9 +52,6 @@ function soloNumeros(){
     let num1 = parseInt(document.getElementById("numero1").value);
     let num2 = parseInt(document.getElementById("numero2").value);
     if(isNaN(num1) || isNaN(num2)){
-        // document.getElementById("resultado").innerText = "Ingrese solo números para poder operar"
-        num1.oninvalid = function(event) {
-            event.target.setCustomValidity('hola');
-        }
+        document.getElementById("resultado").innerText = "Ingrese solo números para poder operar"
     }
 }
